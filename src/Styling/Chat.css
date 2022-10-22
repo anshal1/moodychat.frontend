@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@media only screen and (min-width: 1000px) {
+  .main_chatContainer {
+    width: 100%;
+    height: 95vh;
+    background-color: rgba(255, 255, 255, 0.89);
+    display: flex;
+  }
+  .recent {
+    width: 30%;
+    height: inherit;
+    background-color: blueviolet;
+    border-right: 2px solid rgb(201, 201, 201);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .recenchat {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-weight: 600;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .onlineuser {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    list-style-type: decimal;
+    position: relative;
+    margin: 10px 5px;
+  }
+  .kick_user{
+    font-size: 1rem;
+    margin-left: 30px;
+    padding: 5px;
+    background-color: rgb(87, 0, 168);
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  .kick_user:hover{
+    font-size: 1rem;
+    margin-left: 30px;
+    padding: 5px;
+    background-color: rgb(132, 0, 255);
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    word-spacing: 5px;
+  }
+  .leave_Chat{
+    position: absolute;
+    bottom: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .leave_Chat:hover{
+    background-color: wheat;
+  }
+  .chatbox {
+    width: 70%;
+    height: 83.3vh;
+    overflow-y: auto;
+  }
+}

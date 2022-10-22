@@ -1,0 +1,316 @@
+@media only screen and (max-width: 1000px) {
+  .main_container {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 10px;
+  }
+  .messageBox2 {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .admimM {
+    width: 25rem;
+    height: 30rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px rgb(216, 202, 202), 0px 6px 15px rgb(224, 190, 190);
+    padding: 10px;
+  }
+  .defaultMessage {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: -webkit-linear-gradient(rgb(126, 61, 201), rgb(53, 46, 46));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  #logo {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 0px;
+  }
+  #for_mobile {
+    font-weight: 600;
+    color: blue;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .no_user_found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+  }
+  .no_user_found p {
+    font-size: 1.1rem;
+    color: blue;
+    padding: 1rem;
+    background-color: wheat;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgb(216, 202, 202), 0px 6px 15px rgb(247, 185, 185);
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .no_user_found p:hover{
+    color: rgb(49, 49, 255);
+    padding: .9rem;
+    box-shadow: none;
+  }
+  .tags{
+    width: 100%;
+    height: 5rem;
+    margin: .5rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+  .tags p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: aliceblue;
+    padding: .4rem;
+    background-color: rgb(85, 24, 141);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+   /* width */
+   ::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(61, 61, 61);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .messageBox{
+    /* background-color: red; */
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .allchats{
+    width: inherit;
+  }
+  .allchats_reverse {
+    width: inherit;
+  }
+  #password_input {
+    width: 50%;
+    margin: 1rem auto;
+    outline: none;
+  }
+  #label {
+    margin: auto;
+    width: 50%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f1f1f1;
+    text-decoration: underline;
+    padding: 2px;
+  }
+}
+
+/* ? For desktop */
+
+@media only screen and (min-width: 1000px) {
+  .main_container {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 1rem;
+  }
+  .messageBox {
+    width: 50%;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .messageBox2 {
+    width: 50%;
+    position: relative;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    left: 0;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(61, 61, 61);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .tags {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+  }
+  .tags > p {
+    font-size: 1.3rem;
+    font-weight: 650;
+    text-decoration: underline;
+    text-decoration-line: calc(blink);
+  }
+  .allchats {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 80%;
+  }
+  .allchats_reverse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 80%;
+  }
+  .admimM {
+    width: 30rem;
+    height: 30rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #logo {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    top: 30px;
+  }
+  .defaultMessage {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: -webkit-linear-gradient(rgb(126, 61, 201), rgb(114, 108, 108));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .no_user_found {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login_msg {
+    font-size: 1.1rem;
+    color: blue;
+    padding: 1rem;
+    background-color: wheat;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgb(216, 202, 202), 0px 6px 15px rgb(247, 185, 185);
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .login_msg:hover{
+    color: rgb(49, 49, 255);
+    padding: .9rem;
+    box-shadow: none;
+  }
+  .defaultMessage_heart {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: red;
+  }
+  .admimM a {
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: blue;
+    text-decoration: none;
+    position: absolute;
+    bottom: 130px;
+  }
+  .loading {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    font-weight: 600;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  #password_input {
+    width: 60%;
+    border: 2px solid #555;
+    border-radius: 5px;
+    height: 2rem;
+    margin: auto;
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.4);
+  }
+  #label {
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f1f1f1;
+  }
+}
